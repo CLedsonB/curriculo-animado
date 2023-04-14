@@ -7,9 +7,7 @@
 	<meta name="author" content="CLedson Borges">
 	<meta name="description" content="">
 
-    	<!-- <link rel="stylesheet" href="style.css">  -->
-
-	<title>TITULO</title>
+	<title>Curriculo Animado</title>
 </head>
 <style>
 * {
@@ -17,14 +15,37 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+::selection {
+	color: gold;
+	background-color: red;
+}
+.conteudoCabecario {
+	background-color: #ddd;
+	display: flex;
+}
+.foto-perfil {
+	width: 160px;
+	background-color: #aaa;
+	border-radius: 100%;
+}
+#Itext {
+	display: none;
+}
+#Itext:checked ~ .MeuNome {
+	content: 'cLeDsOn BoRgEs';
+	color: blue;
+}
 </style>
 
 <body class="conteudo">
-	<header>
-	
-	
-	
-	
+	<header class="conteudoCabecario">
+		<div class="caixaImagem">
+			<input type="checkbox" id="Itext">
+			<img src="default.jpg" class="foto-perfil" alt="Oloco meu" />
+			<figcaption>Oloco Meu</figcaption>
+		</div>
+		<label for="Itext" class="MeuNome">MeU nOmE</label>
+				
 	</header>
 	<main>
 	</main>
@@ -34,3 +55,6 @@
 	</footer>
 </body>
 </html>
+
+<!-- https://rogertakemiya.com.br/adicionar-texto-em-um-elemento-apenas-com-css/ -->
+<!-- https://pt.stackoverflow.com/questions/379973/alterar-a-cor-do-texto-ao-clicar-em-um-bot%c3%a3o -->
